@@ -1,8 +1,107 @@
-body {
+* {
     margin: 0px;
     padding: 0px;
-    font-family:"Poppins", sans-serif;
+    font-family:"Poppins";
 }
-h1 {
+#navbar {
+    background-color: whitesmoke;
     font-family: "Poppins";
+}
+#navLogo{
+    height: 30px;
+    width: auto;
+}
+#navContent {
+    margin-left: 120px;
+}
+#links {
+    padding-left: 700px;
+}
+#content {
+    margin-top: 120px;
+}
+#contentLogo {
+    margin-left: 15px;
+    height: 60px;
+    width: auto;
+    
+}
+#contentImg {
+    height: 480px;
+    width: 480px;
+    margin-right: 20px;
+    margin-top: -50px;
+}
+#contentTxt {
+    padding-top: 50px;
+    font-family: "Poppins";
+    text-align: justify;
+}
+#buyB {
+    color: white;
+}
+#infoBox {
+    margin-top: 250px;
+    height: 550px;
+    width: 100%;
+    background-color: rgba(0, 176, 139, 1);
+}
+#howWeWork {
+    text-align: center;
+    font-family: "Poppins";
+    color: white;
+    padding-top: 30px;
+}
+#info{
+    display: flex;
+}
+#ingredientes {
+    font-family: "Poppins";
+    color: white;
+    padding-top: 100px;
+    
+}
+#elaboracao {
+    font-family: "Poppins";
+    color: white;
+    padding-top: 100px;
+}
+#compromisso {
+    font-family: "Poppins";
+    color: white;
+    padding-top: 100px;
+
+}
+#saibaMais {
+    font-family: "Poppins";
+    text-align: center;
+    padding-top: 60px;
+    height: 400px;
+}
+#saibaMais-button {
+    margin-top: 25px;
+}
+#delicias {
+    display: flexbox;
+    height: 600px;
+}
+#delicia1 {
+    height: 500px;
+    width: auto;
+    margin-left: 180px;
+}
+#delicia2 {
+    height: 500px;
+    width: auto;
+    margin-right: 180px;
+}
+#feedback {
+    display: flexbox;
+    height: 600px;
+    background-color: rgba(0, 176, 139, 1);
+}
+#feedbackImg {
+    height: 450px;
+    width: auto;
+    margin-top: 80px;
 }
