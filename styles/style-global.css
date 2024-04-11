@@ -3,6 +3,7 @@
     padding: 0px;
     font-family:"Poppins";
 }
+
 #navbar {
     background-color: whitesmoke;
     font-family: "Poppins";
@@ -57,6 +58,7 @@
     margin-top: 250px;
     height: 550px;
     width: 100%;
+    border-radius: 10px;
     background-color: rgba(0, 176, 139, 1);
 }
 #howWeWork {
@@ -68,21 +70,36 @@
 #info{
     display: flex;
 }
+#terraIcone {
+    padding-left: 145px;
+    padding-bottom: 15px;
+    font-size: 40px;
+}
 #ingredientes {
     font-family: "Poppins";
     color: white;
-    padding-top: 100px;
+    padding-top: 50px;
     
+}
+#sorveteIcone {
+    padding-left: 145px;
+    padding-bottom: 15px;
+    font-size: 40px;
 }
 #elaboracao {
     font-family: "Poppins";
     color: white;
-    padding-top: 100px;
+    padding-top: 50px;
+}
+#saudeIcone {
+    padding-left: 145px;
+    padding-bottom: 15px;
+    font-size: 40px;
 }
 #compromisso {
     font-family: "Poppins";
     color: white;
-    padding-top: 100px;
+    padding-top: 50px;
 
 }
 #saibaMais {
@@ -114,6 +131,7 @@
     justify-content: center;
     font-family: "Poppins";
     height: 600px;
+    border-radius: 10px;
     background-color: rgba(0, 176, 139, 1);
 }
 #feedbackImg {
@@ -140,6 +158,15 @@
 #perguntas {
     margin-left: 250px;
     width: 800px;
+}
+#flush-collapseOne {
+    text-align: left;
+}
+#flush-collapseTwo {
+    text-align: left;
+}
+#flush-collapseThree {
+    text-align: left;
 }
 #duvidas {
     margin-top: 100px;
