@@ -18,7 +18,7 @@
 
 <body>
   <nav id="navbar" class="navbar navbar-expand-lg bg-body-tertiary">
-    <div id="navContent" class="container-fluid">
+    <div id="navConteudo" class="container-fluid">
       <img id="navLogo" src="./img/logo.png" class="rounded float-start" alt="logo">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,21 +34,21 @@
     </div>
   </nav>
 
-  <div id="content" class="container-fluid">
-    <img id="contentImg" src="./img/main.png" class="rounded float-end" alt="ice-creamImg">
-    <div id="contentTxt" class="container">
-      <img id="contentLogo" src="./img/logo.png" class="rounded float-start" alt="logo">
+  <div id="conteudo" class="container-fluid">
+    <img id="conteudoImg" src="./img/main.png" class="rounded float-end" alt="Sorvete imagem">
+    <div id="conteudoTitulo" class="container">
+      <img id="conteudoLogo" src="./img/logo.png" class="rounded float-start" alt="logo">
       <br>
-      <div id="contentTxt" class="container">
+      <div id="conteudoTitulo" class="container">
         <p id="contSubtitulo" class="h4"> Delícia da natureza, congelada no tempo </p>
         <p class="lead">
           Frosty Bloom é uma marca de sorvetes que se destaca pela <br> sua abordagem
           totalmente natural. Utilizando ingredientes <br> orgânicos e frescos, cada sabor é
           cuidadosamente <br> criado para oferecer uma experiência deliciosa e saudável.
         </p>
-        <div id="contentButtons" class="container">
-          <button id="buy" type="button" class="btn btn-warning"> COMPRAR </button>
-          <button id="viewMore" type="button" class="btn btn-outline-secondary "> Ver mais </button>
+        <div id="conteudoBotoes" class="container">
+          <button id="comprar" type="button" class="btn btn-warning"> COMPRAR </button>
+          <button id="verMais" type="button" class="btn btn-outline-secondary "> Ver mais </button>
         </div>
       </div>
     </div>
@@ -56,13 +56,13 @@
   <br>
 
   <div id="infoBox" class="container ">
-    <div id="howWeWork" class="container">
-      <p class="h2"> Como trabalhamos ? </p>
+    <div id="comoTrabalhamos" class="container">
+      <p id="comoTrabalhamosTitulo" class="h4"> Como trabalhamos ? </p>
     </div>
     <div id="info" class="container">
       <div id="ingredientes" class="container">
         <ion-icon id="terraIcone" name="earth-outline"></ion-icon>
-        <p class="h5"> Ingredientes Naturais de Qualidade </p>
+        <p id="ingredientesTitulo" class="h5"> Ingredientes Naturais de Qualidade </p>
         <p class="text">
           A Frosty Bloom inicia seu processo de produção <br>
           selecionando cuidadosamente ingredientes<br> naturais de
@@ -73,7 +73,7 @@
       </div>
       <div id="elaboracao" class="container">
         <ion-icon id="sorveteIcone" name="ice-cream-outline"></ion-icon>
-        <p class="h5"> Elaboração Artesanal dos Sorvetes </p>
+        <p id="elaboracaoTitulo" class="h5"> Elaboração Artesanal dos Sorvetes </p>
         <p class="text"> Com os ingredientes selecionados, a Frosty Bloom
           realiza a elaboração artesanal de seus sorvetes. Cada
           sabor é cuidadosamente desenvolvido para garantir uma
@@ -83,7 +83,7 @@
       </div>
       <div id="compromisso" class="container">
         <ion-icon id="saudeIcone" name="medkit"></ion-icon>
-        <p class="h5"> Compromisso com a Saúde </p>
+        <p id="compromissoTitulo" class="h5"> Compromisso com a Saúde </p>
         <p class="text"> Além de oferecer sorvetes naturais e saborosos, a Frosty
           Bloom se compromete com práticas sustentáveis. Isso
           inclui o uso de embalagens eco-friendly, parcerias com
@@ -96,13 +96,14 @@
   <br>
 
   <div id="saibaMais" class="container">
-    <p class="h5"> Sorvetes Naturais e Artesanais da Frosty Bloom. </p>
-    <p class="h1"> Delícias Geladas Feitas com <br> Ingredientes Naturais e Frescos.</p>
-    <p class="txt"> A Frosty Bloom oferece sorvetes naturais e artesanais, feitos com <br> ingredientes cuidadosamente
+    <p id="saibaMaisSubTitulo" class="h4"> Sorvetes Naturais e Artesanais da Frosty Bloom. </p>
+    <p id="saibaMaisTitulo" class="h1"> Delícias Geladas Feitas com <br> Ingredientes Naturais e Frescos.</p>
+    <p id="saibaMaisTexto" class="txt"> A Frosty Bloom oferece sorvetes naturais e artesanais, feitos com <br>
+      ingredientes cuidadosamente
       selecionados para proporcionar uma experiência <br> deliciosa e saudável aos nossos clientes.
       Saiba mais sobre nossos sabores exclusivos <br> e compromisso com a natureza clicando em
       "Saiba mais" .</p>
-    <button id="saibaMais-button" type="button" class="btn btn-outline-dark"> Saiba Mais </button>
+    <button id="saibaMaisBotao" type="button" class="btn btn-outline-dark"> Saiba Mais </button>
   </div>
 
   <div id="delicias">
@@ -111,8 +112,8 @@
   </div>
 
   <div id="feedback" class="container">
-    <img id="feedbackImg" src="./img/feedbackimg.png" class="rounded float-end" alt="feedbackimg">
-    <p id="feedbackTxt" class="h4"> Feedback dos nossos clientes </p>
+    <img id="feedbackImg" src="./img/1.jpeg" class="rounded float-end" alt="feedbackimg">
+    <p id="feedbackTitulo" class="h4"> Feedback dos nossos clientes </p>
     <p id="clientFeedback" class="text">
       "Estou completamente apaixonado pelos sorvetes da Frosty Bloom!<br>
       Cada colherada é uma explosão de sabor e frescor, e o melhor de tudo<br>
@@ -120,13 +121,23 @@
       tranquilo sabendo que a marca se preocupa com a sustentabilidade,<br>
       utilizando embalagens eco-friendly. Recomendo a todos que desejam<br>
       uma experiência de sorvete verdadeiramente deliciosa e consciente."</p>
+    <ion-icon id="pessoaIcone" name="person-circle-outline"></ion-icon>
+    <div id="nomeCliente" class="container">
+      <p id="nome" class="text-xl-center ">
+        Marcos Victor
+      </p>
+      <p id="cidade" class="text-xl-center">
+        Mirangaba, Bahia, Brazil
+      </p>
+
+    </div>
   </div>
 
   <div id="perguntasFrequentes" class="container">
-    <div id="pfTitulo">
-      <p class="h4"> Perguntas frequentes </p>
+    <div class="container">
+      <p id="perguntasFrequentesTitulo" class="h4"> Perguntas frequentes </p>
     </div>
-    <div id="pfTxt">
+    <div id="perguntasFrequentesTexto">
       <p class="txt"> Perguntas frequentes ordenadas por popularidade. Lembre-se de que, se o visitante ainda não<br>
         se comprometeu com a chamada para ação, eles podem ainda ter dúvidas que podem ser<br>
         respondidas.</p>
@@ -229,186 +240,68 @@
         Caso ainda esteja com dúvidas que não foram respondidas entre em<br>
         contato que nosso suporte vai lhe responder :)
       </p>
-      <button type="button" class="btn btn-outline-dark"> Entre em contato conosco </button>
+      <button id="duvidasBotao" type="button" class="btn btn-outline-dark"> Entre em contato conosco </button>
     </div>
 
     <!-- Footer -->
     <footer class="bg-body-tertiary text-center">
-      <!-- Grid container -->
-      <div class="container p-4">
-        <!-- Section: Social media -->
-        <section class="mb-4">
-          <!-- Facebook -->
-          <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="" role="button"><i
-              class="fab fa-facebook-f"></i></a>
+      <section class="">
+        <div class="row">
+          <div id="frostyBloom" class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Frosty Bloom</h5>
 
-          <!-- Twitter -->
-          <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"><i
-              class="fab fa-twitter"></i></a>
-
-          <!-- Google -->
-          <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"><i
-              class="fab fa-google"></i></a>
-
-          <!-- Instagram -->
-          <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"><i
-              class="fab fa-instagram"></i></a>
-
-          <!-- Linkedin -->
-          <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"><i
-              class="fab fa-linkedin-in"></i></a>
-
-          <!-- Github -->
-          <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"><i
-              class="fab fa-github"></i></a>
-        </section>
-        <!-- Section: Social media -->
-
-        <!-- Section: Form -->
-        <section class="">
-          <form action="">
-            <!--Grid row-->
-            <div class="row d-flex justify-content-center">
-              <!--Grid column-->
-              <div class="col-auto">
-                <p class="pt-2">
-                  <strong>Junte-se ao nosso Blog para<br> ficar atualizado sobre recursos<br> e
-                    lançamentos
-                  </strong>
-                </p>
-              </div>
-              <!--Grid column-->
-
-              <!--Grid column-->
-              <div class="col-md-5 col-12">
-                <!-- Email input -->
-                <div data-mdb-input-init class="form-outline mb-4">
-                  <input type="email" id="form5Example24" class="form-control" />
-                  <label class="form-label" for="form5Example24"> Endereço de Email</label>
-                </div>
-              </div>
-              <!--Grid column-->
-
-              <!--Grid column-->
-              <div class="col-auto">
-                <!-- Submit button -->
-                <button data-mdb-ripple-init type="submit" class="btn btn-outline mb-4">
-                  Enviar
-                </button>
-              </div>
-              <!--Grid column-->
-            </div>
-            <!--Grid row-->
-          </form>
-        </section>
-        <!-- Section: Form -->
-        <!-- Section: Links -->
-        <section class="">
-          <!--Grid row-->
-          <div class="row">
-            <!--Grid column-->
-            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-              <h5 class="text-uppercase">Links</h5>
-
-              <ul class="list-unstyled mb-0">
-                <li>
-                  <a class="text-body" href="#!">Link 1</a>
-                </li>
-                <li>
-                  <a class="text-body" href="#!">Link 2</a>
-                </li>
-                <li>
-                  <a class="text-body" href="#!">Link 3</a>
-                </li>
-                <li>
-                  <a class="text-body" href="#!">Link 4</a>
-                </li>
-              </ul>
-            </div>
-            <!--Grid column-->
-
-            <!--Grid column-->
-            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-              <h5 class="text-uppercase">Links</h5>
-
-              <ul class="list-unstyled mb-0">
-                <li>
-                  <a class="text-body" href="#!">Link 1</a>
-                </li>
-                <li>
-                  <a class="text-body" href="#!">Link 2</a>
-                </li>
-                <li>
-                  <a class="text-body" href="#!">Link 3</a>
-                </li>
-                <li>
-                  <a class="text-body" href="#!">Link 4</a>
-                </li>
-              </ul>
-            </div>
-            <!--Grid column-->
-
-            <!--Grid column-->
-            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-              <h5 class="text-uppercase">Links</h5>
-
-              <ul class="list-unstyled mb-0">
-                <li>
-                  <a class="text-body" href="#!">Link 1</a>
-                </li>
-                <li>
-                  <a class="text-body" href="#!">Link 2</a>
-                </li>
-                <li>
-                  <a class="text-body" href="#!">Link 3</a>
-                </li>
-                <li>
-                  <a class="text-body" href="#!">Link 4</a>
-                </li>
-              </ul>
-            </div>
-            <!--Grid column-->
-
-            <!--Grid column-->
-            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-              <h5 class="text-uppercase">Links</h5>
-
-              <ul class="list-unstyled mb-0">
-                <li>
-                  <a class="text-body" href="#">Link 1</a>
-                </li>
-                <li>
-                  <a class="text-body" href="#!">Link 2</a>
-                </li>
-                <li>
-                  <a class="text-body" href="#!">Link 3</a>
-                </li>
-                <li>
-                  <a class="text-body" href="#!">Link 4</a>
-                </li>
-              </ul>
-            </div>
-            <!--Grid column-->
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a class="text-body" href="#!">@FrostyBloom</a>
+              </li>
+              <li>
+                <a class="text-body" href="#!">Link 2</a>
+              </li>
+              <li>
+                <a class="text-body" href="#!">Link 3</a>
+              </li>
+              <li>
+                <a class="text-body" href="#!">Link 4</a>
+              </li>
+            </ul>
           </div>
-          <!--Grid row-->
-        </section>
-        <!-- Section: Links -->
-      </div>
-      <!-- Grid container -->
 
-      <!-- Copyright -->
-      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
-        © 2024 Copyright:
-        <a class="text-reset fw-bold" href="https://mdbootstrap.com/">FrostyBloom.com</a>
-      </div>
-      <!-- Copyright -->
-    </footer>
+          <div id="desenvolvedores" class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Desenvolvedores</h5>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"></script>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a class="text-body" href="https://www.instagram.com/m4vicctor/#">
+                  @m4vicctor
+                </a>
+              </li>
+              <li>
+                <a class="text-body" href="https://www.instagram.com/carlos_iure01_/#">
+                  @carlos_iure01_
+                </a>
+              </li>
+              <li>
+                <a class="text-body" href="https://www.instagram.com/betaabelenda/#">
+                  @betaabelenda
+                </a>
+              </li>
+              <li>
+                <a class="text-body" href="#!">Link 4</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2024 Copyright:
+            <a class="text-reset fw-bold" href="https://mdbootstrap.com/">FrostyBloom.com</a>
+          </div> 
+        </footer>
+
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+          <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+          <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
