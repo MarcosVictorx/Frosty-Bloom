@@ -1,5 +1,82 @@
-#boxIten{
-    padding: 50px;
-    background-color: aqua;
+
+
+
+:root{
+    /* tertiary não é um padrão do Bootstrap, mas pode ser adicionado! */
+    --tertiary: #00B08B;
 }
 
+
+.bg-tertiary, .btn-tertiary  {
+    background-color: var(--tertiary) !important;
+}
+.text-tertiary{
+    color:var(--tertiary) !important;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family:"Poppins";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#boxTitle{
+    height: 25vh;
+    width: 60vw;
+    margin-bottom: 1em;
+}
+
+#boxTitle h1 {
+    font-size: clamp(4em, 1em + 10vw ,12em);
+}
+
+#link{
+    font-weight: bold;
+}
+
+.frame {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#frame1 {
+    background-color: #d7d7d7;
+    
+}
+#frame1 .col {
+    margin: 0px 5px;
+}
+
+#frame2 {
+    background-color: #d7d7d7;
+}
+
+#frame3 {
+    background-color: #d7d7d7;
+}
+
+.custom-col{
+    height: 65vh;
+}
+
+#column1{
+    width: 400px !important;
+}
+.card-text-container {
+    height: 150px; /* Altura fixa para a seção de texto */
+    overflow-y: auto; /* Habilita a rolagem vertical */
+    background-color: rebeccapurple;
+}
+.card-text-container p{
+    font-size: clamp(10px,1em,20px);
+}
+
+.card img{
+    height: 404px !important; 
+}
