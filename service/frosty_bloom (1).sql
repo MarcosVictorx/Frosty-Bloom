@@ -7,9 +7,11 @@
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-START TRANSACTION;
-SET time_zone = "+00:00";
+
+
+SET @@global.time_zone = '+00:00';
+
+
 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -27,11 +29,13 @@ SET time_zone = "+00:00";
 -- Estrutura para tabela `cadastro_produtos`
 --
 
-CREATE TABLE `cadastro_produtos` (
-  `Produto` int(11) NOT NULL,
-  `id` int(11) NOT NULL,
-  `valor` decimal(10,2) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+ CREATE TABLE cadastro_produtos (
+  id INT PRIMARY KEY IDENTITY,
+  nome VARCHAR(255) NOT NULL,
+  descricao TEXT,
+  preco DECIMAL(10,2) NOT NULL
+);
+
 
 -- --------------------------------------------------------
 
@@ -39,12 +43,12 @@ CREATE TABLE `cadastro_produtos` (
 -- Estrutura para tabela `cliente`
 --
 
-CREATE TABLE `cliente` (
-  `id` int(11) NOT NULL,
-  `nome` varchar(80) NOT NULL,
-  `sobrenome` varchar(80) NOT NULL,
-  `email` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+CREATE TABLE [cliente] (
+  [nome] varchar(80) NOT NULL,
+  [sobrenome] varchar(80) NOT NULL,
+  [email] varchar(100) NOT NULL
+);
+
 
 --
 -- Índices para tabelas despejadas
@@ -53,26 +57,26 @@ CREATE TABLE `cliente` (
 --
 -- Índices de tabela `cadastro_produtos`
 --
-ALTER TABLE `cadastro_produtos`
-  ADD PRIMARY KEY (`id`),
-  ADD KEY `id` (`id`);
+ALTER TABLE [cadastro_produtos]
+  ADD CONSTRAINT fk_id
+  FOREIGN KEY ([id])
+  REFERENCES [outra_tabela]([coluna_referenciada]);
+
+
 
 --
 -- Índices de tabela `cliente`
 --
-ALTER TABLE `cliente`
-  ADD PRIMARY KEY (`id`);
+ALTER TABLE cliente
+  ADD CONSTRAINT pk_cliente_id PRIMARY KEY (id);
+
 
 --
--- AUTO_INCREMENT para tabelas despejadas
---
 
---
--- AUTO_INCREMENT de tabela `cliente`
---
-ALTER TABLE `cliente`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-COMMIT;
+
+
+
+
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
