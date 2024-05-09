@@ -3,6 +3,10 @@
     padding: 0px;
     font-family:"Poppins";
 }
+
+html, body { 
+    scroll-behavior: smooth;
+}
 #navbar {
     background-color: whitesmoke;
     font-family: "Poppins";
