@@ -1,8 +1,261 @@
-body {
-    margin: 0px;
-    padding: 0px;
-    font-family:"Poppins", sans-serif;
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family:"Poppins";
 }
-h1 {
+
+#navbar {
+    background-color: whitesmoke;
     font-family: "Poppins";
+}
+#navConteudo {
+    margin-left: 120px;
+}
+#navLogo{
+    height: 30px;
+    width: auto;
+}
+#links {
+    padding-left: 700px;
+    font-weight: bold;
+}
+#conteudo {
+    margin-top: 120px;
+}
+#conteudoImg {
+    height: 480px;
+    width: 480px;
+    margin-right: 20px;
+    margin-top: -50px;
+}
+#conteudoTitulo {
+    padding-top: 50px;
+    font-family: "Poppins";
+    text-align: justify;
+}
+#conteudoLogo {
+    margin-left: 15px;
+    height: 60px;
+    width: auto;
+}
+#conteudoLogo:hover {
+    transform: scale(1.1);
+}
+
+#conteudoBotoes {
+    justify-content: space-between;
+    margin-top: 30px;
+}
+#comprar {
+    color: white;
+    font-weight: bold;
+}
+#verMais {
+    color:rgba(0, 176, 139, 1) ;
+    font-weight: bold;
+}
+#verMais:hover {
+    color: white;
+}
+#infoBox {
+    margin-top: 250px;
+    height: 550px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgba(0, 176, 139, 1);
+}
+#comoTrabalhamos {
+    text-align: center;
+    font-family: "Poppins";
+    color: white;
+    padding-top: 30px;
+}
+#comoTrabalhamosTitulo {
+    font-size: xx-large;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+}
+#info{
+    display: flex;
+}
+#terraIcone {
+    padding-left: 145px;
+    padding-bottom: 15px;
+    font-size: 40px;
+}
+#ingredientes {
+    font-family: "Poppins";
+    color: white;
+    padding-top: 50px; 
+}
+#ingredientesTitulo {
+    font-weight: bold;
+}
+#sorveteIcone {
+    padding-left: 145px;
+    padding-bottom: 15px;
+    font-size: 40px;
+}
+#elaboracao {
+    font-family: "Poppins";
+    color: white;
+    padding-top: 50px;
+}
+#elaboracaoTitulo {
+    font-weight: bold;
+}
+#saudeIcone {
+    padding-left: 145px;
+    padding-bottom: 15px;
+    font-size: 40px;
+}
+#compromisso {
+    font-family: "Poppins";
+    color: white;
+    padding-top: 50px;
+
+}
+#compromissoTitulo {
+    font-weight: bold;
+}
+#saibaMais {
+    font-family: "Poppins";
+    text-align: center;
+    margin-top: 50px;
+    height: 400px;
+}
+#saibaMaisSubTitulo {
+    font-size:large;
+}
+#saibaMaisTitulo {
+    font-weight: bold;
+    color: rgba(246, 190, 0, 1);
+    text-shadow: 1px 1px 1px black;
+}
+#saibaMaisTitulo:hover {
+    transform: scale(1.1);
+}
+#saibaMaisTexto {
+    margin-top: 40px;
+}
+#saibaMaisBotao {
+    margin-top: 25px;
+    font-weight: bolder;
+    color: rgba(0, 176, 139, 1);
+}
+#saibaMaisBotao:hover {
+    color: white;
+    
+}
+#delicias {
+    display: flexbox;
+    height: 600px;
+}
+#delicia1 {
+    height: 500px;
+    width: auto;
+    margin-left: 160px;
+}
+#delicia1:hover {
+    transform: scale(1.1);
+}
+#delicia2 {
+    height: 500px;
+    width: auto;
+    margin-right: 160px;
+}
+#delicia2:hover {
+    transform: scale(1.1);
+}
+#feedback {
+    display: flexbox;
+    justify-content: center;
+    font-family: "Poppins";
+    height: 600px;
+    border-radius: 10px;
+    background-color: rgba(0, 176, 139, 1);
+}
+#feedbackImg {
+    height: 480px;
+    width: auto;
+    margin-right: 20px;
+    margin-top: 50px;
+}
+#feedbackTitulo {
+    color: white;
+    text-align: center;
+    padding-top:50px;
+    font-size: xx-large;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+}
+#clientFeedback {
+    text-align: center;
+    color: white;
+    padding-top: 60px;
+}
+#pessoaIcone {
+    color: white;
+    font-size: 80px;
+    padding-left: 365px;
+    padding-top: 30px;
+}
+#nomeCliente {
+    color: white;
+}
+#nome {
+    font-weight: bold;
+}
+#cidade {
+    font-size: 12px;
+}
+#perguntasFrequentes {
+    margin-top: 120px;
+    text-align: center;
+}
+#perguntasFrequentesTitulo {
+    font-weight: bold;
+    font-size: xx-large;
+}
+#perguntasFrequentesTexto {
+    padding-top: 20px;
+}
+#perguntas {
+    padding-top: 20px;
+    margin-left: 250px;
+    width: 850px;
+}
+#flush-collapseOne {
+    text-align: left;
+}
+#flush-collapseTwo {
+    text-align: left;
+}
+#flush-collapseThree {
+    text-align: left;
+}
+#duvidas {
+    margin-top: 200px;
+    height: 300px;
+}
+#duvidasBotao {
+    margin-top: 50px;
+}
+#frostyBloom {
+    margin-left: 330px;
+}
+#footer {
+    font-size: 13px;
+}
+#linkFrostyBloom {
+    font-size: 15px;
+}
+#linkDesenvolvedores {
+    font-size: 15px;
+}
+#instagram {
+    font-size:16px;
+}
+#copyright {
+    background-color: rgb(224, 224, 224);
 }
