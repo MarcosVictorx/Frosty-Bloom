@@ -4,12 +4,12 @@
     font-family:"Poppins";
 }
 
+html, body { 
+    scroll-behavior: smooth;
+}
 #navbar {
     background-color: whitesmoke;
     font-family: "Poppins";
-}
-#navConteudo {
-    margin-left: 120px;
 }
 #navLogo{
     height: 30px;
