@@ -103,7 +103,7 @@ body{
 }
 #Title{
     text-shadow: 0px 4px 5px #11111125;
-    font-size: clamp(4em, 1em + 12vw ,14em);
+    font-size: clamp(4em, 1em + 11vw ,12em);
     color: #ffc800;
 }
 
