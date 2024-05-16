@@ -1,15 +1,15 @@
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0%;
+    padding: 0%;
     font-family:"Poppins";
 }
 
+html, body { 
+    scroll-behavior: smooth;
+}
 #navbar {
     background-color: whitesmoke;
     font-family: "Poppins";
-}
-#navConteudo {
-    margin-left: 120px;
 }
 #navLogo{
     height: 30px;
@@ -37,6 +37,9 @@
     margin-left: 15px;
     height: 60px;
     width: auto;
+}
+#conteudoLogo:hover {
+    transform: scale(1.1);
 }
 
 #conteudoBotoes {
@@ -129,6 +132,9 @@
     color: rgba(246, 190, 0, 1);
     text-shadow: 1px 1px 1px black;
 }
+#saibaMaisTitulo:hover {
+    transform: scale(1.1);
+}
 #saibaMaisTexto {
     margin-top: 40px;
 }
@@ -148,12 +154,18 @@
 #delicia1 {
     height: 500px;
     width: auto;
-    margin-left: 180px;
+    margin-left: 160px;
+}
+#delicia1:hover {
+    transform: scale(1.1);
 }
 #delicia2 {
     height: 500px;
     width: auto;
-    margin-right: 180px;
+    margin-right: 160px;
+}
+#delicia2:hover {
+    transform: scale(1.1);
 }
 #feedback {
     display: flexbox;
@@ -226,6 +238,24 @@
     margin-top: 200px;
     height: 300px;
 }
+#duvidasBotao {
+    margin-top: 50px;
+}
 #frostyBloom {
     margin-left: 330px;
+}
+#footer {
+    font-size: 13px;
+}
+#linkFrostyBloom {
+    font-size: 15px;
+}
+#linkDesenvolvedores {
+    font-size: 15px;
+}
+#instagram {
+    font-size:16px;
+}
+#copyright {
+    background-color: rgb(224, 224, 224);
 }
