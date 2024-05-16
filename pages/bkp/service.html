@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Inserir Dados no Banco de Dados</h2>
+    <button onclick="executarPHP()">Inserir Dados</button>
+    <a class="nav-link text-tertiary " href="../Catalog/catalog.html">Catálogo</a>
+
+    <h2>Preencha o Formulário</h2>
+    <form id="formularioContato">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="nomeproduto">Nome do produto:</label>
+        <input type="text" id="nomeProduct" name="nomeProduct" required><br><br>
+
+        <label for="valor">Valor:</label>
+        <input type="number" id="valor" name="valor" required><br><br>
+        
+        <input type="button" value="Salvar Dados" onclick="salvarDados()">
+    </form>
+
+    <script>
+        function salvarDados() {
+            var nome = document.getElementById('nome').value;
+            var email = document.getElementById('email').value;
+            var nomeProduct = document.getElementById('nomeProduct').value;
+            var valor = document.getElementById('valor').value;
+
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", "salvar_dados.php", true);
+            xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    alert(xhr.responseText);
+                    document.getElementById("formularioContato").reset(); // Limpar o formulário após salvar os dados
+                }
+            };
+            xhr.send("nome=" + nome + "&email=" + email + "&nomeProduct=" + nomeProduct + "&valor=" + valor);
+        }
+    </script>
+
+    <script>
+        function executarPHP() {
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", "executar_php.php", true); // Substitua "executar_php.php" pelo nome do seu arquivo PHP
+            xhr.send();
+            xhr.onload = function () {
+                if (xhr.status == 200) {
+                    alert(xhr.responseText); // Exibe a mensagem de retorno do PHP
+                } else {
+                    alert('Erro ao executar o PHP');
+                }
+            };
+        }
+    </script>
+</body>
+</html>
