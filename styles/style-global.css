@@ -1,3 +1,26 @@
+:root{
+    /* tertiary não é um padrão do Bootstrap, mas pode ser adicionado! */
+    --secondary: #F6BE00;
+    --tertiary: #00B08B;
+    --morango: #c9525c;
+    --napolitano: #B16D6D;
+    --avela: #3d1c19;
+}
+
+.bg-tertiary, .btn-tertiary  {
+    background-color: var(--tertiary) !important;
+}
+.text-tertiary{
+    color:var(--tertiary) !important;
+}
+
+.bg-secondary, .btn-secondary  {
+    background-color: var(--secondary) !important;
+}
+.text-secondary{
+    color: var(--secondary) !important;
+}
+
 * {
     margin: 0%;
     padding: 0%;
@@ -259,3 +282,5 @@ html, body {
 #copyright {
     background-color: rgb(224, 224, 224);
 }
+
+
