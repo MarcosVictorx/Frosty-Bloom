@@ -3,22 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./catalog-styled.css">
+
     <link rel="stylesheet" href="../../styles/style-global.css">
-    <link rel="stylesheet" href="../../styles/fonts.css">
-    
+    <link rel="stylesheet" href="./catalog-styled.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
     
+    <link rel="stylesheet" href="../../styles/css/bootstrap.min.css" />
     
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    
-
     <title>Catalogo</title>
 
-   
+    <script src="./catalog.js"> </script>
+    
 </head>
 <body>
     <nav id="navbar" class="navbar navbar-expand-lg  w-100 text-center" >
@@ -46,7 +44,8 @@
         </div>
        
     </nav>
-      
+
+      <!-- 1 Section Sorvete -->
       <div class="container">
          <div id="boxTitle" class=" row text-center d-flex align-items-center justify-content-center" >
             <h1 id="Title" > Sorvertes </h1> 
@@ -93,10 +92,11 @@
                     </div>
                 </div>
             </div>
-        </div> <!-- Close Row-->
+         </div>   
+      </div> <!-- Close Row-->
 
-        <!-- 2 Section Casquinha -->
-        <div class="container ">
+      <!-- 2 Section Casquinha -->
+      <div class="container ">
             <div id="boxTitle" class="py-4 row text-center d-flex align-items-center justify-content-center" >
                 <h1 id="Title" > Casquinha </h1> 
            </div>
@@ -111,7 +111,7 @@
                                 Feita com ingredientes orgânicos selecionados, esta casquinha é uma explosão refrescante de sabor tropical 
                                 que você pode saborear sem preocupações. Aproveite cada mordida e experimente a doçura genuína da natureza em cada cone!
                             </p>
-                            <button type="button" class="btn btn-primary mt-auto" data-toggle="modal" data-target="#exampleModal" onclick="openModal('Sabor Manga', 'Descrição do sabor manga.', 'Casquinha')">Comprar</button>
+                            <button type="button" class="btn btn-primary mt-auto" onclick="loadModalContent('./Modais/casquinha/modal1.html', 'Sabor Manga3', 'Descrição do sabor manga.', 'modal1')">Comprar</button>
 
                         </div>
                     </div>
@@ -124,7 +124,7 @@
                             <p class="card-text flex-grow-1"> 
                                 Refresque-se com a nossa Casquinha de Limão. Feita com ingredientes orgânicos cuidadosamente escolhidos, esta casquinha oferece uma explosão cítrica e revigorante de sabor que você pode desfrutar sem restrições. Cada mordida é uma experiência de frescor e leveza, trazendo o verdadeiro sabor da natureza em cada sorvete!
                             </p>
-                            <a href="#" class="btn btn-primary mt-auto">Comprar</a>
+                            <button type="button" class="btn btn-primary mt-auto" onclick="loadModalContent('./Modais/casquinha/modal2.html', 'Sabor Morango1', 'Descrição do sabor morango.', 'modal2')">Comprar</button>
                         </div>
                     </div>
                 </div>
@@ -140,10 +140,11 @@
                         </div>
                     </div>
                 </div>
-            </div> <!-- Close Row-->
+             </div>
+      </div> <!-- Close Row-->
 
-            <!-- 3 Section Gelato -->
-        <div class="container ">
+      <!-- 3 Section Gelato -->
+      <div class="container ">
             <div id="boxTitle" class=" row text-center d-flex align-items-center justify-content-center" >
                 <h1 id="Title"> Gelato </h1> 
             </div>
@@ -185,36 +186,62 @@
                     </div>
                 </div>
             </div>
-        </div> <!-- Close Row-->
+      </div> <!-- Close Row-->
 
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div id="modal-container"></div>
+
+      <script src="catalog.js?v=1.0"></script>
+      <script src="../../service/js/bootstrap.min.js" > </script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+     
+</body> 
+</html>
+<!-- 
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.1/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+-->
+
+
+      <!-- Modal 
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog ">
              <div  class="modal-content ">
                <div class="row p-4">
                   <div class="col text-center flex-sm-column">
                       <label for="productName">Seu nome</label>
-                      <input type="text" placeholder="Fulano de tal" class="form-control text-center" id="productName" name="productName">
+                      <input  type="text" placeholder="Fulano de tal" class="form-control text-center" id="NameClient" name="NameClient">
                   </div>
                   <div class="col text-center flex-sm-column">
                       <label for="productName">Telefone</label>
-                      <input type="text" placeholder="(00) 9 9999 - 9999" class="form-control text-center" id="productName" name="productName">
+                      <input type="text" placeholder="(00) 9 9999 - 9999" class="form-control text-center" id="telefone" name="telefone">
                   </div>
                </div>
                 <div class="row px-4 "> 
                   <div class="col text-center" > 
                       <label for="productName" >Email</label>
-                      <input type="email" placeholder="email01fulano@gmail.com" class="form-control text-center" id="productName" name="productName">
+                      <input type="email" placeholder="email01fulano@gmail.com" class="form-control text-center" id="email" name="email">
                   </div>
                 </div>
         
                <div class="row p-4"> 
                   <div class="col text-center"> 
                       <label for="productName">Quantidade</label>
-                      <input type="number" placeholder="1" class="form-control text-center" id="productName" name="productName">
+                      <input type="number"  value="1" class="form-control text-center" id="quant" name="quantidade">
                   </div>
                   <div class="col text-center"> 
                       <label for="productName">Valor</label>
-                     <input placeholder="R$ 15,00" disabled type="text" class="form-control text-center" id="productName" name="productName">
+                     <input value=15 disabled type="text" class="form-control text-center" id="valor" name="valor">
                   </div>
                </div>
                <div class="row p-4">
@@ -226,13 +253,14 @@
                   <div class="col"> 
                       <div class="card" style="height: 13em;" >
                           <div class="card-body text-center">
-                              <h5 class="card-title">Casquinha</h5>
-                              <h6 class="card-subtitle mb-2 text-body-secondary">Sabor Manga</h6>
+                              <h5 class="card-title"> <input  value="Casquinha" disabled type="text"  class="form-control text-center" id="nomeProduct" name="nomeProduct"></h5>
+                              
                               <p class="card-text"> 
                                   <ul class="list-group">
-                                      <li class="list-group-item">Tamanho: P</li>
-                                      <li class="list-group-item">Peso: 100g</li>
-                                    </ul>
+                                    <li class="list-group-item" style="padding: 5px !important;">Sabor Manga</li>
+                                      <li class="list-group-item" style="padding: 5px !important;">Tamanho: P</li>
+                                      <li class="list-group-item" style="padding: 5px !important;">Peso: 100g</li>
+                                 </ul>
                             </div>    
                       </div>
                   </div>
@@ -241,101 +269,10 @@
               
                <div class="row p-4"> 
                   <div class="col text-center"> 
-                      <button type="submit" class="btn btn-primary col ">Salvar</button>  
+                      <button type="submit" class="btn btn-primary col " onclick="salvarDados()">Salvar</button>  
                   </div>
                </div>
              </div>
            </div>
-          </div>     
-       
-        
-      
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.1/dist/umd/popper.min.js"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-      <script src="./catalog.js"> </script>
-      
-    
-</body> 
-</html>
-<!--
-     <div style="background-color: blueviolet;">
-        <h2> Catalogo</h2>
-         <button onclick={Teste0()}> Teste 1</button>
-         <button onclick={Teste1()}> Teste 2</button>
-         <button onclick={Teste2()}> Teste 3</button>
-         <button onclick={Result(10,5)}> calcular</button>
-         <button id="changeColor" onclick="mudarCor()"> Mudar Cor </button>
-        
-        <div  id="boxIten" class="container" > 
-            <h2 id="title"> Teste</h2> 
-            
-        </div>
-
-    </div>
-
--->
-
-<!--
-    FRAMES 
-          <div class="row ">
-            <div id="frame1" class="container-fluid flex-lg-nowrap frame"> 
-              
-                <div id="boxTitle" class="row text-warning text-center d-flex align-items-center justify-content-center bg-secondary" >
-                     <h1 id="Title" > Casquinhas </h1> 
-                </div>
-                <div id="boxContent" class="d-flex  flex-lg-row flex-column">
-                    <div id="boxCard" class="col-lg-4 col-sm-9">
-                        
-                    </div>
-                    <div id="boxCard" class="col-lg-4 col-sm-9"></div>
-                    <div id="boxCard" class="col-lg-4 col-sm-9"></div>
-                </div>
-            </div>
-        </div> 
-
-        <div class="row ">
-            <div id="frame1" class="container-fluid flex-lg-nowrap frame"> 
-              
-                <div id="boxTitle" class="row text-warning text-center d-flex align-items-center justify-content-center bg-secondary" >
-                     <h1 id="Title" > Gelados</h1> 
-                </div>
-                <div id="boxContent" class="d-flex  flex-lg-row flex-column">
-                    <div id="boxCard" class="col-lg-4 col-sm-9">
-                    </div>
-                    <div id="boxCard" class="col-lg-4 col-sm-9"></div>
-                    <div id="boxCard" class="col-lg-4 col-sm-9"></div>
-                </div>
-            </div>
-        </div> 
-
--->
-
-<!--
-   < MODAL >
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Detalhes do Produto</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <h5 id="product-title"></h5>
-          <p id="product-description"></p>
-          <p id="product-type"></p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  
--->
+      </div>     
+      -->
