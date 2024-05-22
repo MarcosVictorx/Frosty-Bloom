@@ -1,35 +1,80 @@
-function openModal(title, description, type) {
-    document.getElementById('product-title').innerText = title;
-    document.getElementById('product-description').innerText = description;
-    document.getElementById('product-type').innerText = "Tipo: " + type;
+function salvarDados() {
+
+    var NameClient = document.getElementById('NameClient').value;
+
+    var Email = document.getElementById('email').value;
+    
+    var Telefone = document.getElementById('telefone').value;
+
+    var NameProduct = document.getElementById('nomeProduct').value;
+
+    var Valor = document.getElementById('valor').value;
+    
+    var Quant = document.getElementById('quant').value;
+
+    if(NameClient == "") {
+       alert("Nome nao pode ficar vazio ")
+    } else if (Email == "") {
+       alert("Email nao pode ficar vazio ")
+    }  else {
+        
+        console.log(NameClient);
+        console.log(Email);
+        console.log(Telefone);
+        console.log(NameProduct);
+        console.log(Valor);
+        console.log(Quant);
+
+        var xhr = new XMLHttpRequest();
+        
+        xhr.open("POST", "salvar_dados.php", true);
+        xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState == 4 && xhr.status == 200) {
+            alert(xhr.responseText);
+            document.getElementById("formularioContato").reset(); // Limpar o formulário após salvar os dados
+            }
+        };
+            
+        xhr.send("NameClient=" + NameClient + "&email=" + Email + "&nomeProduct=" + NameProduct + "&valor=" + Valor);
+        }              
+ }
+
+ function loadModalContent(url, title, description, modalId) {
+  fetch(url)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Erro na resposta do servidor');
+      }
+      return response.text();
+    })
+    .then(data => {
+     
+      document.getElementById('modal-container').innerHTML = data;
+      document.getElementById(modalId + 'Label').innerText = title;
+      document.getElementById(modalId + 'Description').innerText = description;
+
+      // Inicializa o modal após carregar o conteúdo
+      var myModal = new bootstrap.Modal(document.getElementById(modalId), {});
+      myModal.show();
+    })
+    .catch(error => console.error('Erro ao carregar o modal:', error));
 }
 
+function showModal(url, modalId) {
+  fetch(url)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Erro na resposta do servidor');
+      }
+      return response.text();
+    })
+    .then(data => {
+      document.getElementById('modal-container').innerHTML = data;
 
-$(document).ready(function() {
-    $('#saveForm').submit(function(e) {
-      e.preventDefault(); // Impede o envio do formulário padrão
-
-      // Captura os dados do formulário
-      var productName = $('#productName').val();
-      // Captura outros campos do formulário se houver
-
-      // Envia os dados para o arquivo PHP usando AJAX
-      $.ajax({
-        url: 'save_data.php',
-        type: 'POST',
-        data: {
-          productName: productName,
-          // Outros campos do formulário aqui
-        },
-        success: function(response) {
-          // Manipule a resposta do arquivo PHP aqui, por exemplo, exibindo uma mensagem de sucesso
-          alert('Dados salvos com sucesso!');
-          $('#exampleModal').modal('hide'); // Fecha o modal após salvar os dados
-        },
-        error: function(xhr, status, error) {
-          // Manipule os erros aqui, por exemplo, exibindo uma mensagem de erro
-          alert('Ocorreu um erro ao salvar os dados.');
-        }
-      });
-    });
-  });
+      // Inicializa e mostra o modal após carregar o conteúdo
+      var myModal = new bootstrap.Modal(document.getElementById(modalId), {});
+      myModal.show();
+    })
+    .catch(error => console.error('Erro ao carregar o modal:', error));
+}
