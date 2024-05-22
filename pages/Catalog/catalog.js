@@ -1,15 +1,29 @@
+function showModal(url, modalId) {
+  fetch(url)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Erro na resposta do servidor');
+      }
+      return response.text();
+    })
+    .then(data => {
+      document.getElementById('modal-container').innerHTML = data;
+
+      // Inicializa e mostra o modal após carregar o conteúdo
+      var myModal = new bootstrap.Modal(document.getElementById(modalId), {});
+      myModal.show();
+     
+    })
+    .catch(error => console.error('Erro ao carregar o modal:', error));
+}
+
 function salvarDados() {
 
     var NameClient = document.getElementById('NameClient').value;
-
     var Email = document.getElementById('email').value;
-    
     var Telefone = document.getElementById('telefone').value;
-
     var NameProduct = document.getElementById('nomeProduct').value;
-
     var Valor = document.getElementById('valor').value;
-    
     var Quant = document.getElementById('quant').value;
 
     if(NameClient == "") {
@@ -41,22 +55,3 @@ function salvarDados() {
  }
 
  
-
-function showModal(url, modalId) {
-  fetch(url)
-    .then(response => {
-      if (!response.ok) {
-        throw new Error('Erro na resposta do servidor');
-      }
-      return response.text();
-    })
-    .then(data => {
-      document.getElementById('modal-container').innerHTML = data;
-
-      // Inicializa e mostra o modal após carregar o conteúdo
-      var myModal = new bootstrap.Modal(document.getElementById(modalId), {});
-      myModal.show();
-     
-    })
-    .catch(error => console.error('Erro ao carregar o modal:', error));
-}
