@@ -111,7 +111,7 @@
                                 Feita com ingredientes orgânicos selecionados, esta casquinha é uma explosão refrescante de sabor tropical 
                                 que você pode saborear sem preocupações. Aproveite cada mordida e experimente a doçura genuína da natureza em cada cone!
                             </p>
-                            <button type="button" class="btn btn-primary mt-auto" onclick="loadModalContent('./Modais/casquinha/modal1.html', 'Sabor Manga3', 'Descrição do sabor manga.', 'modal1')">Comprar</button>
+                            <button type="button" class="btn btn-primary mt-auto" onclick="showModal('./Modais/casquinha/manga.html','modal1')">Comprar</button>
 
                         </div>
                     </div>
@@ -124,7 +124,7 @@
                             <p class="card-text flex-grow-1"> 
                                 Refresque-se com a nossa Casquinha de Limão. Feita com ingredientes orgânicos cuidadosamente escolhidos, esta casquinha oferece uma explosão cítrica e revigorante de sabor que você pode desfrutar sem restrições. Cada mordida é uma experiência de frescor e leveza, trazendo o verdadeiro sabor da natureza em cada sorvete!
                             </p>
-                            <button type="button" class="btn btn-primary mt-auto" onclick="loadModalContent('./Modais/casquinha/modal2.html', 'Sabor Morango1', 'Descrição do sabor morango.', 'modal2')">Comprar</button>
+                            <button type="button" class="btn btn-primary mt-auto" onclick="loadModalContent('./Modais/casquinha/limao.html', 'Sabor Limão', 'Descrição do sabor Limão', 'modal2')">Comprar</button>
                         </div>
                     </div>
                 </div>
@@ -136,7 +136,7 @@
                             <p class="card-text flex-grow-1"> 
                                 Deleite-se com a nossa Casquinha de Uva. Feita com ingredientes orgânicos de alta qualidade, esta casquinha proporciona uma explosão frutada e suculenta de sabor que você pode apreciar sem preocupações. Cada mordida é uma viagem ao sabor natural das uvas frescas, trazendo uma experiência refrescante e deliciosa a cada cone!
                             </p>
-                            <a href="#" class="btn btn-primary mt-auto">Comprar</a>
+                            <button type="button" class="btn btn-primary mt-auto" onclick="showModal('./Modais/casquinha/uva.html','modal3')">Comprar</button>
                         </div>
                     </div>
                 </div>
@@ -189,10 +189,11 @@
       </div> <!-- Close Row-->
 
       <div id="modal-container"></div>
-
+  
       <script src="catalog.js?v=1.0"></script>
       <script src="../../service/js/bootstrap.min.js" > </script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
      
 </body> 
 </html>
@@ -214,7 +215,7 @@
 
 
       <!-- Modal 
-      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
             <div class="modal-dialog ">
              <div  class="modal-content ">
                <div class="row p-4">

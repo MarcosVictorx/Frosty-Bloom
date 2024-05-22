@@ -36,7 +36,7 @@ function salvarDados() {
             }
         };
             
-        xhr.send("NameClient=" + NameClient + "&email=" + email + "&nomeProduct=" + nomeProduct + "&valor=" + valor);
+        xhr.send("NameClient=" + NameClient + "&email=" + Email + "&nomeProduct=" + NameProduct + "&valor=" + Valor);
         }              
  }
 
@@ -61,3 +61,20 @@ function salvarDados() {
     .catch(error => console.error('Erro ao carregar o modal:', error));
 }
 
+function showModal(url, modalId) {
+  fetch(url)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Erro na resposta do servidor');
+      }
+      return response.text();
+    })
+    .then(data => {
+      document.getElementById('modal-container').innerHTML = data;
+
+      // Inicializa e mostra o modal após carregar o conteúdo
+      var myModal = new bootstrap.Modal(document.getElementById(modalId), {});
+      myModal.show();
+    })
+    .catch(error => console.error('Erro ao carregar o modal:', error));
+}
