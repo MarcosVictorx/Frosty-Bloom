@@ -40,26 +40,7 @@ function salvarDados() {
         }              
  }
 
- function loadModalContent(url, title, description, modalId) {
-  fetch(url)
-    .then(response => {
-      if (!response.ok) {
-        throw new Error('Erro na resposta do servidor');
-      }
-      return response.text();
-    })
-    .then(data => {
-     
-      document.getElementById('modal-container').innerHTML = data;
-      document.getElementById(modalId + 'Label').innerText = title;
-      document.getElementById(modalId + 'Description').innerText = description;
-
-      // Inicializa o modal após carregar o conteúdo
-      var myModal = new bootstrap.Modal(document.getElementById(modalId), {});
-      myModal.show();
-    })
-    .catch(error => console.error('Erro ao carregar o modal:', error));
-}
+ 
 
 function showModal(url, modalId) {
   fetch(url)
@@ -75,6 +56,7 @@ function showModal(url, modalId) {
       // Inicializa e mostra o modal após carregar o conteúdo
       var myModal = new bootstrap.Modal(document.getElementById(modalId), {});
       myModal.show();
+     
     })
     .catch(error => console.error('Erro ao carregar o modal:', error));
 }
