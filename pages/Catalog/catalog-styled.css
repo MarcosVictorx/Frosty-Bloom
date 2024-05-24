@@ -1,0 +1,210 @@
+:root{
+    /* tertiary não é um padrão do Bootstrap, mas pode ser adicionado! */
+    --secondary: #F6BE00;
+    --tertiary: #00B08B;
+    --morango: #c9525c;
+    --napolitano: #B16D6D;
+    --avela: #3d1c19;
+}
+
+.bg-tertiary, .btn-tertiary  {
+    background-color: var(--tertiary) !important;
+}
+.text-tertiary{
+    color:var(--tertiary) !important;
+}
+
+.bg-secondary, .btn-secondary  {
+    background-color: var(--secondary) !important;
+}
+.text-secondary{
+    color: var(--secondary) !important;
+}
+
+html, body { 
+    scroll-behavior: smooth;
+}
+
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family:"Poppins";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#link{
+    font-weight: bold;
+}
+
+.frame {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#frame1 {
+    background-color: #d7d7d7;
+    
+}
+#frame1 .col {
+    margin: 0px 5px;
+}
+
+#frame2 {
+    background-color: #d7d7d7;
+}
+
+#frame3 {
+    background-color: #d7d7d7;
+}
+
+.custom-col{
+    height: 65vh;
+}
+
+#column1{
+    width: 400px !important;
+    overflow: hidden;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    width: 90%;
+    background-color: aqua;
+}
+
+#img1{
+    width: 100% !important;
+}
+
+#boxImg{
+    height: 40% !important;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#boxTitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20%;
+    margin-top: 1em;
+}
+#Title{
+    text-shadow: 0px 4px 5px #11111125;
+    font-size: clamp(4em, 1em + 11vw ,12em);
+    color: #ffc800;
+}
+
+#boxContent{
+    display: flex;
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#boxCard{
+    width: 30%;
+    height: 75%;
+    overflow: hidden;
+    margin: 0px 5px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 4px rgba(37, 37, 37, 0.319);
+}
+
+#boxCardImg{
+    height: 50%;
+    width: 100%;
+    overflow: hidden;
+}
+#imgCard{
+    height: 100%;
+    width: 100%;
+}
+
+#boxCardContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40%;
+}
+#boxCardTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    width:100% ;
+    background-color: var(--tertiary);
+}
+.avela{
+    background-color: var(--avela) !important;
+    color: white;
+}
+
+.morango{
+    background-color: var(--morango) !important;
+    color: white;
+}
+
+.napolitano{
+    background-color: var(--napolitano) !important;
+    color: white;
+}
+#titleCard{
+    color: var(--secondary);
+}
+
+#boxInfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width: 95%;
+    overflow-y: auto;
+}
+#pCard{
+    font-size: clamp(5px,1em + 3vw,15px );
+}
+#boxBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+    background-color: blueviolet;
+}
+#btnSend{
+    border: none;
+    width: 80%;
+    height: 50%;
+    border-radius: 5px;
+    background-color: white;
+    transition: all 1s;
+    opacity: 0.75;
+}
+#btnSend:hover{
+    transition: all 1s;
+    transform: scale(1.05);
+    opacity: 1;
+}
+
+#modalBox{
+    box-sizing: border-box;
+    padding: 10px;
+
+}

@@ -4,304 +4,162 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Frosty Bloom </title>
+  
   <link rel="stylesheet" href="styles/fonts.css">
   <link rel="stylesheet" href="./styles/style-global.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <title>Frosty Bloom</title>
 </head>
 
 <body>
-  <nav id="navbar" class="navbar navbar-expand-lg bg-body-tertiary">
-    <div id="navConteudo" class="container-fluid">
-      <img id="navLogo" src="./img/logo.png" class="rounded float-start" alt="logo">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light w-100 text-center">
+    <div id="navConteudo" class="container w-100 d-flex justify-content-between align-items-center">
+      <img id="navLogo" src="./img/logo.png" class="rounded float-start img-fluid" alt="logo">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div id="links" class="collapse navbar-collapse">
-        <div class="navbar-nav">
-          <a class="nav-link" href="/index.html"> Inicio </a>
-          <a class="nav-link" href="./pages/Catalog/catalog.html"> Catálogo </a>
-          <a class="nav-link" href="./pages/About/about.html"> Sobre nós </a>
-        </div>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link text-tertiary" href="#navbar">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-tertiary" href="./pages/Catalog/catalog.html">Catálogo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-tertiary" href="./pages/About/about.html">Sobre nós</a>
+          </li>
+        </ul>
       </div>
     </div>
   </nav>
-
-  <div id="conteudo" class="container-fluid">
-    <img id="conteudoImg" src="./img/main.png" class="rounded float-end" alt="Sorvete imagem">
-    <div id="conteudoTitulo" class="container">
-      <img id="conteudoLogo" src="./img/logo.png" class="rounded float-start" alt="logo">
-      <br>
-      <div id="conteudoTitulo" class="container">
-        <p id="contSubtitulo" class="h4"> Delícia da natureza, congelada no tempo </p>
+  
+  
+  <div id="conteudo" class="container mt-4">
+    <div class="row">
+      <div class="col-md-6">
+        <img id="conteudoImg" src="./img/main.png" class="rounded float-end img-fluid" alt="Sorvete imagem">
+      </div>
+      <div class="col-md-6">
+        <img id="conteudoLogo" src="./img/logo.png" class="rounded float-start img-fluid" alt="logo">
+        <p id="contSubtitulo" class="h4 mt-3">Delícia da natureza, congelada no tempo</p>
         <p class="lead">
-          Frosty Bloom é uma marca de sorvetes que se destaca pela <br> sua abordagem
-          totalmente natural. Utilizando ingredientes <br> orgânicos e frescos, cada sabor é
-          cuidadosamente <br> criado para oferecer uma experiência deliciosa e saudável.
+          Frosty Bloom é uma marca de sorvetes que se destaca pela sua abordagem totalmente natural. Utilizando ingredientes orgânicos e frescos, cada sabor é cuidadosamente criado para oferecer uma experiência deliciosa e saudável.
         </p>
-        <div id="conteudoBotoes" class="container">
-          <button id="comprar" type="button" class="btn btn-warning"> COMPRAR </button>
-          <button id="verMais" type="button" class="btn btn-outline-secondary "> Ver mais </button>
+        <div id="conteudoBotoes" class="d-flex gap-2">
+          <a href="./pages/Catalog/catalog.html" id="comprar" type="button" class="btn btn-warning">COMPRAR</a>
+          <button id="verMais" type="button" class="btn btn-outline-secondary">Ver mais</button>
         </div>
       </div>
     </div>
   </div>
-  <br>
 
-  <div id="infoBox" class="container ">
-    <div id="comoTrabalhamos" class="container">
-      <p id="comoTrabalhamosTitulo" class="h4"> Como trabalhamos ? </p>
+  <div id="infoBox" class="container bg-warning mt-5 py-4">
+    <div id="comoTrabalhamos" class="text-center mb-4">
+      <p id="comoTrabalhamosTitulo" class="h4">Como trabalhamos?</p>
     </div>
-    <div id="info" class="container">
-      <div id="ingredientes" class="container">
+    <div id="info" class="row">
+      <div id="ingredientes" class="col-md-4 text-center">
         <ion-icon id="terraIcone" name="earth-outline"></ion-icon>
-        <p id="ingredientesTitulo" class="h5"> Ingredientes Naturais de Qualidade </p>
+        <p id="ingredientesTitulo" class="h5">Ingredientes Naturais de Qualidade</p>
         <p class="text">
-          A Frosty Bloom inicia seu processo de produção <br>
-          selecionando cuidadosamente ingredientes<br> naturais de
-          alta qualidade. Isso inclui frutas <br> frescas de produtores
-          locais, ingredientes <br> orgânicos certificados e produtos
-          livres <br> de aditivos artificiais.
+          A Frosty Bloom inicia seu processo de produção selecionando cuidadosamente ingredientes naturais de alta qualidade. Isso inclui frutas frescas de produtores locais, ingredientes orgânicos certificados e produtos livres de aditivos artificiais.
         </p>
       </div>
-      <div id="elaboracao" class="container">
+      <div id="elaboracao" class="col-md-4 text-center">
         <ion-icon id="sorveteIcone" name="ice-cream-outline"></ion-icon>
-        <p id="elaboracaoTitulo" class="h5"> Elaboração Artesanal dos Sorvetes </p>
-        <p class="text"> Com os ingredientes selecionados, a Frosty Bloom
-          realiza a elaboração artesanal de seus sorvetes. Cada
-          sabor é cuidadosamente desenvolvido para garantir uma
-          experiência única e deliciosa para os clientes. Os
-          sorvetes são feitos em pequenos lotes para manter a
-          qualidade e a frescura dos produtos. </p>
+        <p id="elaboracaoTitulo" class="h5">Elaboração Artesanal dos Sorvetes</p>
+        <p class="text">
+          Com os ingredientes selecionados, a Frosty Bloom realiza a elaboração artesanal de seus sorvetes. Cada sabor é cuidadosamente desenvolvido para garantir uma experiência única e deliciosa para os clientes. Os sorvetes são feitos em pequenos lotes para manter a qualidade e a frescura dos produtos.
+        </p>
       </div>
-      <div id="compromisso" class="container">
+      <div id="compromisso" class="col-md-4 text-center">
         <ion-icon id="saudeIcone" name="medkit"></ion-icon>
-        <p id="compromissoTitulo" class="h5"> Compromisso com a Saúde </p>
-        <p class="text"> Além de oferecer sorvetes naturais e saborosos, a Frosty
-          Bloom se compromete com práticas sustentáveis. Isso
-          inclui o uso de embalagens eco-friendly, parcerias com
-          fornecedores locais para reduzir a pegada de carbono e
-          a promoção de um estilo de vida saudável, incentivando
-          o consumo consciente e equilibrado.</p>
+        <p id="compromissoTitulo" class="h5">Compromisso com a Saúde</p>
+        <p class="text">
+          Além de oferecer sorvetes naturais e saborosos, a Frosty Bloom se compromete com práticas sustentáveis. Isso inclui o uso de embalagens eco-friendly, parcerias com fornecedores locais para reduzir a pegada de carbono e a promoção de um estilo de vida saudável, incentivando o consumo consciente e equilibrado.
+        </p>
       </div>
     </div>
   </div>
-  <br>
 
-  <div id="saibaMais" class="container">
-    <p id="saibaMaisSubTitulo" class="h4"> Sorvetes Naturais e Artesanais da Frosty Bloom. </p>
-    <p id="saibaMaisTitulo" class="h1"> Delícias Geladas Feitas com <br> Ingredientes Naturais e Frescos.</p>
-    <p id="saibaMaisTexto" class="txt"> A Frosty Bloom oferece sorvetes naturais e artesanais, feitos com <br>
-      ingredientes cuidadosamente
-      selecionados para proporcionar uma experiência <br> deliciosa e saudável aos nossos clientes.
-      Saiba mais sobre nossos sabores exclusivos <br> e compromisso com a natureza clicando em
-      "Saiba mais" .</p>
-    <button id="saibaMaisBotao" type="button" class="btn btn-outline-dark"> Saiba Mais </button>
+  <div id="saibaMais" class="container mt-5 text-center">
+    <p id="saibaMaisSubTitulo" class="h4">Sorvetes Naturais e Artesanais da Frosty Bloom.</p>
+    <p id="saibaMaisTitulo" class="h1">Delícias Geladas Feitas com Ingredientes Naturais e Frescos.</p>
+    <p id="saibaMaisTexto" class="txt">
+      A Frosty Bloom oferece sorvetes naturais e artesanais, feitos com ingredientes cuidadosamente selecionados para proporcionar uma experiência deliciosa e saudável aos nossos clientes. Saiba mais sobre nossos sabores exclusivos e compromisso com a natureza clicando em "Saiba mais".
+    </p>
+    <button id="saibaMaisBotao" type="button" class="btn btn-outline-dark">Saiba Mais</button>
   </div>
 
-  <div id="delicias">
-    <img id="delicia1" src="./img/icecream1.png" class="rounded float-start" alt="delicia1">
-    <img id="delicia2" src="./img/icecream2.png" class="rounded float-end" alt="delicia2">
-  </div>
-
-  <div id="feedback" class="container">
-    <img id="feedbackImg" src="./img/1.jpeg" class="rounded float-end" alt="feedbackimg">
-    <p id="feedbackTitulo" class="h4"> Feedback dos nossos clientes </p>
-    <p id="clientFeedback" class="text">
-      "Estou completamente apaixonado pelos sorvetes da Frosty Bloom!<br>
-      Cada colherada é uma explosão de sabor e frescor, e o melhor de tudo<br>
-      é saber que são feitos com ingredientes naturais. Além disso, fico<br>
-      tranquilo sabendo que a marca se preocupa com a sustentabilidade,<br>
-      utilizando embalagens eco-friendly. Recomendo a todos que desejam<br>
-      uma experiência de sorvete verdadeiramente deliciosa e consciente."</p>
-    <ion-icon id="pessoaIcone" name="person-circle-outline"></ion-icon>
-    <div id="nomeCliente" class="container">
-      <p id="nome" class="text-xl-center ">
-        Marcos Victor
-      </p>
-      <p id="cidade" class="text-xl-center">
-        Mirangaba, Bahia, Brazil
-      </p>
-
-    </div>
-  </div>
-
-  <div id="perguntasFrequentes" class="container">
-    <div class="container">
-      <p id="perguntasFrequentesTitulo" class="h4"> Perguntas frequentes </p>
-    </div>
-    <div id="perguntasFrequentesTexto">
-      <p class="txt"> Perguntas frequentes ordenadas por popularidade. Lembre-se de que, se o visitante ainda não<br>
-        se comprometeu com a chamada para ação, eles podem ainda ter dúvidas que podem ser<br>
-        respondidas.</p>
-    </div>
-    <div id="perguntas" class="accordion accordion-flush" id="accordionFlushExample">
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-            Quais os sabores ?
-          </button>
-        </h2>
-        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body">Na Frosty Bloom, cada colherada é uma viagem sensorial através dos sabores mais
-            puros e frescos da natureza. Nossos sorvetes artesanais são cuidadosamente
-            elaborados com ingredientes naturais, capturando a essência das frutas maduras e dos ingredientes mais
-            autênticos.<br>
-            <br>
-            🍓 Morango Silvestre: Deixe-se envolver pela doçura intensa e refrescante do morango silvestre. Cada mordida
-            é uma explosão de sabor que desperta os sentidos e faz você desejar mais.<br>
-            <br>
-            🍫 Chocolate Belga: Delicie-se com a indulgência luxuosa do chocolate belga. Feito com os melhores cacaus,
-            nosso sorvete de chocolate derrete na boca, proporcionando uma experiência única e irresistível.<br>
-            <br>
-            🥥 Coco Tropical: Transporte-se para um paraíso tropical com o sabor exótico e cremoso do coco. Cada
-            colherada é como uma escapada para uma ilha ensolarada, deixando você com um sorriso no rosto.<br>
-            <br> 🍦 Baunilha Madagascarense: Descubra a elegância clássica da baunilha madagascarense. Com sua
-            fragrância envolvente e sabor rico, este sorvete é uma verdadeira homenagem à rainha das especiarias.<br>
-            <br>
-            🍇 Uva Fresca: Refresque-se com a pureza e a vivacidade da uva fresca. Nosso sorvete de uva é uma explosão
-            de frescor frutado que faz com que cada momento seja uma celebração.
-          </div>
-        </div>
+  <div id="delicias" class="container mt-5 text-center">
+    <div class="row">
+      <div class="col-md-6">
+        <img id="delicia1" src="./img/icecream1.png" class="rounded img-fluid" alt="delicia1">
       </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-            Prazo de entrega ?
-          </button>
-        </h2>
-        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body">Desfrute da Rapidez e Eficiência na Entrega com Frosty Bloom!<br>
-            <br>
-            Na Frosty Bloom, entendemos que a antecipação de saborear nossos deliciosos sorvetes naturais pode ser
-            insuportável. É por isso que nos esforçamos para garantir que sua espera seja mínima, com um serviço de
-            entrega rápido e eficiente que leva a experiência Frosty Bloom diretamente para a sua porta.<br>
-            <br>
-            🚚 Entrega Rápida: Não queremos que você espere muito para desfrutar da maravilha dos nossos sorvetes
-            naturais. Com nossos parceiros de entrega confiáveis e uma logística eficiente, garantimos que seus pedidos
-            sejam entregues em tempo recorde, para que você possa saborear a frescura de nossos sorvetes assim que
-            possível.<br>
-            <br>
-            🌍 Entrega em Todo o Brasil: Esteja você em uma grande cidade ou em uma área remota, a Frosty Bloom está
-            comprometida em levar a alegria dos nossos sorvetes naturais para todos os cantos do Brasil. Não importa
-            onde você esteja, estamos aqui para satisfazer seus desejos gelados.<br>
-            <br>
-            📦 Embalagens Especiais: Sabemos o quanto é importante manter a integridade e a qualidade dos nossos
-            sorvetes durante o transporte. Por isso, utilizamos embalagens especiais que mantêm os sorvetes congelados e
-            frescos durante toda a viagem, garantindo que cheguem até você em perfeitas condições.<br>
-            <br>
-            👨‍🍳 Feito Sob Encomenda: Na Frosty Bloom, cada pedido é preparado sob encomenda, garantindo que você
-            receba sorvetes frescos e deliciosos sempre que fizer um pedido. Nossos sorvetes são cuidadosamente
-            embalados e enviados com todo o carinho e atenção que você merece.<br>
-            <br>
-            Deixe-nos cuidar da entrega enquanto você se prepara para uma experiência gelada como nenhuma outra. Com a
-            Frosty Bloom, a conveniência está apenas a alguns cliques de distância!<br>
-            <br>
-            Frosty Bloom - Entrega Rápida, Sorvetes Naturais e Muita Satisfação!
-          </div>
-        </div>
+      <div class="col-md-6">
+        <img id="delicia2" src="./img/icecream2.png" class="rounded img-fluid" alt="delicia2">
       </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-            data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-            É realmente feito com produtos naturais ?
-          </button>
-        </h2>
-        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body"> Na Frosty Bloom, acreditamos em trazer a essência pura dos ingredientes naturais
-            diretamente para o seu paladar. Nossos sorvetes são cuidadosamente elaborados com os melhores ingredientes
-            naturais,
-            cultivados com carinho e respeito à terra. De frutas maduras colhidas no auge da sua doçura a ricas
-            baunilhas vindas de fontes sustentáveis, cada sabor é uma celebração da natureza em sua forma mais
-            deliciosa.
-            Além de oferecer uma explosão de sabor inigualável, na Frosty Bloom estamos comprometidos com a
-            sustentabilidade ambiental. Utilizamos práticas responsáveis desde a seleção dos ingredientes até
-            o processo de produção, garantindo que cada sorvete seja uma escolha consciente para você
-            e para o planeta.</div>
+    </div>
+  </div>
+
+  <div id="feedback" class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <img id="feedbackImg" src="./img/1.jpeg" class="rounded img-fluid" alt="feedbackimg">
+      </div>
+      <div class="col-md-6">
+        <p id="feedbackTitulo" class="h4">Feedback dos nossos clientes</p>
+        <p id="clientFeedback" class="text">
+          "Estou completamente apaixonado pelos sorvetes da Frosty Bloom! Cada colherada é uma explosão de sabor e frescor, e o melhor de tudo é saber que são feitos com ingredientes naturais. Além disso, fico tranquilo sabendo que a marca se preocupa com a sustentabilidade, utilizando embalagens eco-friendly. Recomendo a todos que desejam uma experiência de sorvete verdadeiramente deliciosa e consciente."
+        </p>
+        <ion-icon id="pessoaIcone" name="person-circle-outline"></ion-icon>
+        <div id="nomeCliente" class="mt-2">
+          <p id="nome" class="text-xl-center">Marcos Victor</p>
+          <p id="cidade" class="text-xl-center">Mirangaba, Bahia, Brazil</p>
         </div>
       </div>
     </div>
+  </div>
 
-    <div id="duvidas" class="container">
-      <p class="h4">
-        Ainda tem dúvidas ?
-      </p>
-      <p class="txt">
-        Caso ainda esteja com dúvidas que não foram respondidas entre em<br>
-        contato que nosso suporte vai lhe responder :)
-      </p>
-      <button id="duvidasBotao" type="button" class="btn btn-outline-dark"> Entre em contato conosco </button>
+  <div id="perguntasFrequentes" class="container mt-5">
+    <div class="text-center mb-4">
+      <p id="perguntasFrequentesTitulo" class="h4">Perguntas frequentes</p>
     </div>
+    <div id="perguntas" class="row">
+      <div id="frequentes" class="col-md-4 text-center">
+        <p id="perguntasTitulo1" class="h5">O que torna o sorvete da Frosty Bloom especial?</p>
+        <p class="text">
+          O sorvete da Frosty Bloom é especial porque é feito com ingredientes naturais de alta qualidade, sem aditivos artificiais. Além disso, a elaboração artesanal e o compromisso com a sustentabilidade tornam cada sabor único e delicioso.
+        </p>
+      </div>
+      <div id="frequentes" class="col-md-4 text-center">
+        <p id="perguntasTitulo2" class="h5">Quais são os sabores disponíveis?</p>
+        <p class="text">
+          A Frosty Bloom oferece uma variedade de sabores, incluindo frutas frescas, combinações clássicas e opções sazonais. Todos os sabores são desenvolvidos para proporcionar uma experiência única e deliciosa.
+        </p>
+      </div>
+      <div id="frequentes" class="col-md-4 text-center">
+        <p id="perguntasTitulo3" class="h5">Onde posso encontrar os sorvetes da Frosty Bloom?</p>
+        <p class="text">
+          Os sorvetes da Frosty Bloom estão disponíveis em lojas especializadas e pontos de venda parceiros. Você também pode adquirir nossos produtos através do nosso catálogo online, com entregas disponíveis em várias regiões.
+        </p>
+      </div>
+    </div>
+  </div>
 
-    <!-- Footer -->
-    <footer class="bg-body-tertiary text-center">
-      <section class="">
-        <div class="row">
-          <div id="frostyBloom" class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <h5 class="text-uppercase">Frosty Bloom</h5>
+  <footer id="rodape" class="bg-warning mt-5 py-4 text-center">
+    <p class="h4 mb-4">Para mais informações</p>
+    <p class="lead mb-0">Contacte-nos através das redes sociais ou pelo nosso site.</p>
+  </footer>
 
-            <ul class="list-unstyled mb-0">
-              <li>
-                <a class="text-body" href="#!">@FrostyBloom</a>
-              </li>
-              <li>
-                <a class="text-body" href="#!">Link 2</a>
-              </li>
-              <li>
-                <a class="text-body" href="#!">Link 3</a>
-              </li>
-              <li>
-                <a class="text-body" href="#!">Link 4</a>
-              </li>
-            </ul>
-          </div>
-
-          <div id="desenvolvedores" class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <h5 class="text-uppercase">Desenvolvedores</h5>
-
-            <ul class="list-unstyled mb-0">
-              <li>
-                <a class="text-body" href="https://www.instagram.com/m4vicctor/#">
-                  @m4vicctor
-                </a>
-              </li>
-              <li>
-                <a class="text-body" href="https://www.instagram.com/carlos_iure01_/#">
-                  @carlos_iure01_
-                </a>
-              </li>
-              <li>
-                <a class="text-body" href="https://www.instagram.com/betaabelenda/#">
-                  @betaabelenda
-                </a>
-              </li>
-              <li>
-                <a class="text-body" href="#!">Link 4</a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
-            © 2024 Copyright:
-            <a class="text-reset fw-bold" href="https://mdbootstrap.com/">FrostyBloom.com</a>
-          </div> 
-        </footer>
-
-          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-            crossorigin="anonymous"></script>
-          <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-          <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@ionic/core@6.5.1/dist/ionic/ionic.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk7+5T/5QNF0lA3IzXtRs+U9svHEebENswEnREuS" crossorigin="anonymous"></script>
 </body>
 
 </html>

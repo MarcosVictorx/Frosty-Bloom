@@ -1,0 +1,118 @@
+:root{
+    /* tertiary não é um padrão do Bootstrap, mas pode ser adicionado! */
+    --secondary: #F6BE00;
+    --tertiary: #00B08B;
+    --morango: #c9525c;
+    --napolitano: #B16D6D;
+    --avela: #3d1c19;
+}
+
+.bg-tertiary, .btn-tertiary  {
+    background-color: var(--tertiary) !important;
+}
+.text-tertiary{
+    color:var(--tertiary) !important;
+}
+
+.bg-secondary, .btn-secondary  {
+    background-color: var(--secondary) !important;
+}
+.text-secondary{
+    color: var(--secondary) !important;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+.programador {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.programador img {
+    width: 200px;
+    height: 200px; 
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 6.5px 0;
+}
+
+.btn-voltar {
+    display: inline-block;
+    background-color: #ffc400;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+
+.card {
+    width: 220px;
+    margin-bottom: 30px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-top {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.card-title {
+    margin: 10px 0 5px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.list-unstyled {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.list-unstyled li {
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+}
