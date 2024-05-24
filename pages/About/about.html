@@ -28,49 +28,7 @@
     <title>Sobre Nós</title>
     <link rel="stylesheet" href="about-style.css">
 </head>
-    <style>
-        .programadores {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-        }
 
-        .programador {
-            text-align: center;
-            margin-bottom: 20px;
-            width: 200px;
-        }
-
-        .programador img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            margin-bottom: 10px;
-        }
-
-        .programador h2 {
-            margin-top: 0;
-            margin-bottom: 5px;
-            white-space: nowrap; 
-            overflow: hidden; 
-            text-overflow: ellipsis; 
-        }
-
-        .programador ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        .programador ul li {
-            margin-bottom: 5px;
-        }
-
-        footer {
-            margin-top: 50px; 
-            text-align: center;
-        }
-    </style>
 
 <body>
     <nav id="navbar" class="navbar navbar-expand-lg  w-100 text-center" >
@@ -106,43 +64,63 @@
             <h2 style="color:rgb(0, 206, 144)">Quem Somos?</h2>
             <p>Somos um time de programadores apaixonados por tecnologia e inovação. Cada um sendo o melhor naquilo que exerce.</p>
         </section>
-        <br></br><section class="programadores">
-            <div class="programador">
-                <img src="../../img/devs/andre.jpeg" alt="André">
-                <h2>André Luiz Lopes</h2>
-                <ul>
-                    <li>21 anos</li>
-                    <li>Desenvolvedor front-end</li>
-                    <li>Designer Gráfico</li>
-                </ul>
+        <br>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card programador">
+                    <img src="../../img/devs/andre.jpeg" class="card-img-top" alt="André">
+                    <div class="card-body">
+                        <h2 class="card-title ">André Luiz Lopes</h2>
+                        <ul class="list-unstyled">
+                            <li>21 anos</li>
+                            <li>Desenvolvedor front-end</li>
+                            <li>Designer Gráfico</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="programador">
-                <img src="../../img/devs/iure.jpeg" alt="Carlos Iure">
-                <h2>Carlos Iure Gordiano dos Santos</h2>
-                <ul>
-                    <li>21 anos</li>
-                    <li>Desenvolvedor front-end</li>
-                    <li>Designer UI/UX</li>
-                </ul>
+        
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card programador">
+                    <img src="../../img/devs/iure.jpeg" class="card-img-top" alt="Carlos Iure">
+                    <div class="card-body">
+                        <h2 class="card-title ">Carlos Iure Gordiano dos Santos</h2>
+                        <ul class="list-unstyled">
+                            <li>21 anos</li>
+                            <li>Desenvolvedor front-end</li>
+                            <li>Designer UI/UX</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="programador">
-                <img src="../../img/devs/marcos.jpeg" alt="Marcos Victor">
-                <h2>Marcos Victor Silva Souza</h2>
-                <ul>
-                    <li>20 anos</li>
-                    <li>Desenvolvedor front-end</li>
-                </ul>
+        
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card programador">
+                    <img src="../../img/devs/marcos.jpeg" class="card-img-top" alt="Marcos Victor">
+                    <div class="card-body">
+                        <h2 class="card-title">Marcos Victor Silva Souza</h2>
+                        <ul class="list-unstyled">
+                            <li>20 anos</li>
+                            <li>Desenvolvedor front-end</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="programador">
-                <img src="../../img/devs/roberta.jpeg" alt="Roberta">
-                <h2>Roberta Abelenda</h2>
-                <ul>
-                    <li>36 anos</li>
-                    <li>Desenvolvedora back-end</li>
-                </ul>
+        
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card programador">
+                    <img src="../../img/devs/roberta.jpeg" class="card-img-top" alt="Roberta">
+                    <div class="card-body">
+                        <h2 class="card-title">Roberta Abelenda</h2>
+                        <ul class="list-unstyled">
+                            <li>36 anos</li>
+                            <li>Desenvolvedora back-end</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-           
-        </section>
+        </div>
+        
         <section>
             <h2 style="color:rgb(0, 206, 144)">Nossa Missão</h2>
             <p>Buscamos sempre oferecer o melhor para nossos clientes, trabalhando com dedicação e comprometimento para superar expectativas.</p>

@@ -76,3 +76,43 @@ footer {
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
+
+
+.card {
+    width: 220px;
+    margin-bottom: 30px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-top {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.card-title {
+    margin: 10px 0 5px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.list-unstyled {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.list-unstyled li {
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+}
