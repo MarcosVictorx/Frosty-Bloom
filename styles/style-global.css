@@ -143,8 +143,7 @@ html, body {
 #saibaMais {
     font-family: "Poppins";
     text-align: center;
-    margin-top: 50px;
-    height: 400px;
+    
 }
 #saibaMaisSubTitulo {
     font-size:large;
@@ -153,12 +152,6 @@ html, body {
     font-weight: bold;
     color: rgba(246, 190, 0, 1);
     text-shadow: 1px 1px 1px black;
-}
-#saibaMaisTitulo:hover {
-    transform: scale(1.1);
-}
-#saibaMaisTexto {
-    margin-top: 40px;
 }
 #saibaMaisBotao {
     margin-top: 25px;
@@ -169,26 +162,7 @@ html, body {
     color: white;
     
 }
-#delicias {
-    display: flexbox;
-    height: 600px;
-}
-#delicia1 {
-    height: 500px;
-    width: auto;
-    margin-left: 160px;
-}
-#delicia1:hover {
-    transform: scale(1.1);
-}
-#delicia2 {
-    height: 500px;
-    width: auto;
-    margin-right: 160px;
-}
-#delicia2:hover {
-    transform: scale(1.1);
-}
+
 #feedback {
     display: flexbox;
     justify-content: center;
@@ -200,7 +174,6 @@ html, body {
 #feedbackImg {
     height: 480px;
     width: auto;
-    margin-right: 20px;
     margin-top: 50px;
 }
 #feedbackTitulo {
