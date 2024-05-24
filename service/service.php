@@ -15,7 +15,7 @@ if ($mysqli->connect_error) {
 // Criando o banco de dados frostybloom_db
 $sql = "CREATE DATABASE IF NOT EXISTS frostybloom_db";
 if ($mysqli->query($sql) === TRUE) {
-    echo "Banco de dados criado com sucesso<br>";
+    echo "Banco de dados criado com sucesso\n";
 } else {
     echo "Erro ao criar banco de dados: " . $mysqli->error;
 }
@@ -25,13 +25,13 @@ $mysqli->select_db($dbname);
 
 // Criando a tabela cliente
 $sql = "CREATE TABLE IF NOT EXISTS cliente (
-    clientid INT AUTO_INCREMENT PRIMARY KEY,
-    nameclient VARCHAR(255) NOT NULL,
+    clientID INT AUTO_INCREMENT PRIMARY KEY,
+    nameClient VARCHAR(255) NOT NULL,
     email VARCHAR(255) NOT NULL,
-    phonenumber VARCHAR(20) NOT NULL
+    phoneNumber VARCHAR(20) NOT NULL
 )";
 if ($mysqli->query($sql) === TRUE) {
-    echo "Tabela cliente criada com sucesso<br>";
+    echo "Tabela cliente criada com sucesso ou ja existente\n";
 } else {
     echo "Erro ao criar tabela cliente: " . $mysqli->error;
 }
@@ -39,15 +39,15 @@ if ($mysqli->query($sql) === TRUE) {
 // Criando a tabela produtos
 $sql = "CREATE TABLE IF NOT EXISTS produtos (
     productid INT AUTO_INCREMENT PRIMARY KEY,
-    NameProduct VARCHAR(255) NOT NULL,
+    nameProduct VARCHAR(255) NOT NULL,
     price DECIMAL(10,2) NOT NULL,
     amount INT NOT NULL,
-    clientid INT,
+    clientID INT,
     flavor VARCHAR(200), -- Adicionando o campo flavor
-    FOREIGN KEY (clientid) REFERENCES cliente(clientid)
+    FOREIGN KEY (clientID) REFERENCES cliente(clientID)
 )";
 if ($mysqli->query($sql) === TRUE) {
-    echo "Tabela produtos criada com sucesso<br>";
+    echo "Tabela produtos criada com sucesso\n";
 } else {
     echo "Erro ao criar tabela produtos: " . $mysqli->error;
 }

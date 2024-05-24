@@ -55,3 +55,16 @@ function salvarDados() {
  }
 
  
+ function executarPHP() {
+  var xhr = new XMLHttpRequest();
+  xhr.open("GET", "../../service/service.php", true); // Substitua "executar_php.php" pelo nome do seu arquivo PHP
+  xhr.send();
+  xhr.onload = function () {
+      if (xhr.status == 200) {
+          alert(xhr.responseText); // Exibe a mensagem de retorno do PHP
+      } else {
+          alert('Erro ao executar o PHP');
+      }
+  };
+}
+
