@@ -15,7 +15,7 @@ if ($mysqli->connect_error) {
 // Criando o banco de dados frostybloom_db
 $sql = "CREATE DATABASE IF NOT EXISTS frostybloom_db";
 if ($mysqli->query($sql) === TRUE) {
-    echo "Banco de dados criado com sucesso\n";
+    echo "Banco de dados criado com sucesso :)\n";
 } else {
     echo "Erro ao criar banco de dados: " . $mysqli->error;
 }
@@ -31,7 +31,7 @@ $sql = "CREATE TABLE IF NOT EXISTS cliente (
     phoneNumber VARCHAR(20) NOT NULL
 )";
 if ($mysqli->query($sql) === TRUE) {
-    echo "Tabela cliente criada com sucesso ou ja existente\n";
+    echo "Tabela cliente criada com sucesso :)\n";
 } else {
     echo "Erro ao criar tabela cliente: " . $mysqli->error;
 }
@@ -47,7 +47,7 @@ $sql = "CREATE TABLE IF NOT EXISTS produtos (
     FOREIGN KEY (clientID) REFERENCES cliente(clientID)
 )";
 if ($mysqli->query($sql) === TRUE) {
-    echo "Tabela produtos criada com sucesso\n";
+    echo "Tabela produtos criada com sucesso :)\n";
 } else {
     echo "Erro ao criar tabela produtos: " . $mysqli->error;
 }
