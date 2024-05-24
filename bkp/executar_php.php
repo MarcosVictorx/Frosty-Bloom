@@ -12,7 +12,7 @@ if (!$conn) {
 }
 
 // Verificando se o banco de dados existe
-$dbname = "Estoque";
+$dbname = "EstoqueTesteBKP";
 $result = mysqli_query($conn, "SHOW DATABASES LIKE '$dbname'");
 
 if (mysqli_num_rows($result) == 0) {
